@@ -25,7 +25,7 @@ const Footer = () => {
                 business requirements
               </li>
               <li className="mb-2 flex gap-3 items-center max-md:hidden">
-                <div className="relative h-7 w-7">
+                <div className="relative h-6 w-6">
                   <Image
                     src="/twitter.png"
                     alt="Logo"
@@ -35,7 +35,7 @@ const Footer = () => {
                     loading="lazy"
                   />
                 </div>
-                <div className="relative h-7 w-7">
+                <div className="relative h-6 w-6">
                   <Image
                     src="/telegram.png"
                     alt="Logo"
@@ -45,7 +45,7 @@ const Footer = () => {
                     loading="lazy"
                   />
                 </div>
-                <div className="relative h-7 w-7">
+                <div className="relative h-6 w-6">
                   <Image
                     src="/instagram.png"
                     alt="Logo"
@@ -55,7 +55,7 @@ const Footer = () => {
                     loading="lazy"
                   />
                 </div>
-                <div className="relative h-7 w-7">
+                <div className="relative h-6 w-6">
                   <Image
                     src="/facebook.png"
                     alt="Logo"
@@ -65,7 +65,7 @@ const Footer = () => {
                     loading="lazy"
                   />
                 </div>
-                <div className="relative h-7 w-7">
+                <div className="relative h-6 w-6">
                   <Image
                     src="/linkedin.png"
                     alt="Logo"
@@ -147,7 +147,7 @@ const Footer = () => {
       </div>
 
       <li className="gap-3 items-center hidden max-md:flex ml-5 mb-8">
-        <div className="relative h-7 w-7">
+        <div className="relative h-6 w-6">
           <Image
             src="/twitter.png"
             alt="Logo"
@@ -157,7 +157,7 @@ const Footer = () => {
             loading="lazy"
           />
         </div>
-        <div className="relative h-7 w-7">
+        <div className="relative h-6 w-6">
           <Image
             src="/telegram.png"
             alt="Logo"
@@ -167,7 +167,7 @@ const Footer = () => {
             loading="lazy"
           />
         </div>
-        <div className="relative h-7 w-7">
+        <div className="relative h-6 w-6">
           <Image
             src="/instagram.png"
             alt="Logo"
@@ -177,7 +177,7 @@ const Footer = () => {
             loading="lazy"
           />
         </div>
-        <div className="relative h-7 w-7">
+        <div className="relative h-6 w-6">
           <Image
             src="/facebook.png"
             alt="Logo"
@@ -187,7 +187,7 @@ const Footer = () => {
             loading="lazy"
           />
         </div>
-        <div className="relative h-7 w-7">
+        <div className="relative h-6 w-6">
           <Image
             src="/linkedin.png"
             alt="Logo"
@@ -200,7 +200,7 @@ const Footer = () => {
       </li>
 
       <div className="border-t-[1px] border-t-[#ffffff] py-4 relative left-1/2 -translate-x-1/2 w-[70%] max-2xl:w-[85%] max-md:w-[90%] max-sm:w-[95%]">
-        <div className="max-w-7xl mx-auto  text-sm">
+        <div className="max-w-7xl mx-auto  text-[0.8rem]">
           <p className=" max-md:w-[70%] max-md:leading-7">Copyright &copy; 2024 Easypay. All rights reserved.</p>
         </div>
       </div>
