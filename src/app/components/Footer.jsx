@@ -113,7 +113,7 @@ const Footer = () => {
         </div>
 
         <div className="max-md:flex hidden justify-between min-h-[10rem] ">
-          <div className="flex flex-col justify-start  max-w-[45%] ">
+          <div className="flex flex-col justify-start   ">
             <h3 className="text-lg font-semibold mb-4">Legal</h3>
             <ul>
               <li className="mb-2 text-[0.9rem]">
@@ -129,7 +129,7 @@ const Footer = () => {
           </div>
 
           {/* Resources Column */}
-          <div className="flex flex-col justify-start  max-w-[45%] ">
+          <div className="flex flex-col justify-start   ">
             <h3 className="text-lg font-semibold mb-4">Resources</h3>
             <ul>
               <li className="mb-2 text-[0.9rem]">
@@ -200,8 +200,8 @@ const Footer = () => {
       </li>
 
       <div className="border-t-[1px] border-t-[#ffffff] py-4 relative left-1/2 -translate-x-1/2 w-[70%] max-2xl:w-[85%] max-md:w-[90%] max-sm:w-[95%]">
-        <div className="max-w-7xl mx-auto  ">
-          <p className=" max-md:w-[60%] max-md:leading-7">Copyright &copy; 2024 Easypay. All rights reserved.</p>
+        <div className="max-w-7xl mx-auto  text-sm">
+          <p className=" max-md:w-[70%] max-md:leading-7">Copyright &copy; 2024 Easypay. All rights reserved.</p>
         </div>
       </div>
     </div>
