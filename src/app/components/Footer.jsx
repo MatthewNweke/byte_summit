@@ -116,13 +116,13 @@ const Footer = () => {
           <div className="flex flex-col justify-start   ">
             <h3 className="text-lg font-semibold mb-4">Legal</h3>
             <ul>
-              <li className="mb-2 text-[0.9rem]">
+              <li className="mb-2 text-[0.9rem] max-sm:text-[0.8rem]">
                 <span>End User License Agreement</span>
               </li>
-              <li className="mb-2 text-[0.9rem]">
+              <li className="mb-2 text-[0.9rem] max-sm:text-[0.8rem]">
                 <span>Trademark & Copyright</span>
               </li>
-              <li className="mb-2 text-[0.9rem]">
+              <li className="mb-2 text-[0.9rem] max-sm:text-[0.8rem]">
                 <span>FAQ’s</span>
               </li>
             </ul>
@@ -132,13 +132,13 @@ const Footer = () => {
           <div className="flex flex-col justify-start   ">
             <h3 className="text-lg font-semibold mb-4">Resources</h3>
             <ul>
-              <li className="mb-2 text-[0.9rem]">
+              <li className="mb-2 text-[0.9rem] max-sm:text-[0.8rem]">
                 <span>Terms of Service</span>
               </li>
-              <li className="mb-2 text-[0.9rem]">
+              <li className="mb-2 text-[0.9rem] max-sm:text-[0.8rem]">
                 <span>Privacy Policy</span>
               </li>
-              <li className="mb-2 text-[0.9rem]">
+              <li className="mb-2 text-[0.9rem] max-sm:text-[0.8rem]">
                 <span>Cookies</span>
               </li>
             </ul>
