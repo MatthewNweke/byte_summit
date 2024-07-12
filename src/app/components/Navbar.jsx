@@ -41,7 +41,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`w-full flex shadow-md fixed z-40 top-0 left-0 justify-around max-lg:block transition-all duration-300 ${
+      className={`w-full flex shadow-md fixed z-50 top-0 bg-[white] left-0 justify-around max-lg:block transition-all duration-300 ${
         isScrolled ? "bg-[transparent] bg-opacity-90" : "bg-[white]"
       }`}
     >
