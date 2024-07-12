@@ -34,7 +34,7 @@ const Home = () => {
       <div className="flex justify-center">
         <div className="flex flex-col w-[40%]">
           <div className="montserrat-bold text-[2.5rem] w-[60%] font-semibold">
-            <span>Let's build your dream </span>
+            <span>Let&lsquo;s build your dream </span>
             <span
               key={textIndex}
               className={`text-[#FF8039] ${
