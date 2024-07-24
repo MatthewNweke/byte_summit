@@ -4,13 +4,13 @@ import Image from "next/image";
 const Dropship = ({ description, img, reverse }) => {
   return (
     <div className="my-10">
-      <div className={`flex justify-end gap-[5%] mt-20 ${reverse ? 'flex-row-reverse' : ''}`}>
-        <div className="p-5 w-[40%]">
+      <div className={`flex flex-col lg:flex-row justify-center max-lg:items-center  gap-10 mt-20 ${reverse ? 'lg:flex-row-reverse' : ''}`}>
+        <div className="p-5 w-full lg:w-2/5 lg:p-16">
           <div className="flex items-center justify-between gap-5 mb-5">
-            <p className="text-[#3B4F9B] text-[1.5rem] font-semibold">Dropship</p>
-            <button className="bg-[#ffffff] flex items-center justify-between border-1 text-[#3D52A1] px-5 py-3 my-5 cursor-pointer text-center shadow-xl rounded-3xl text-[1rem] min-w-[35%]">
+            <p className="text-[#3B4F9B] text-xl font-semibold">Dropship</p>
+            <button className="bg-white flex items-center justify-center border border-gray-300 text-[#3D52A1] px-5 py-2 cursor-pointer shadow-md rounded-full text-base hover:bg-gray-100 transition">
               <span>View Project</span>
-              <div className="relative w-7 h-7">
+              <div className="relative w-7 h-7 ml-2">
                 <Image
                   src="/view_project.svg"
                   alt="view project"
@@ -21,15 +21,16 @@ const Dropship = ({ description, img, reverse }) => {
               </div>
             </button>
           </div>
-          <p className="text-[#2B3A72] mb-8">{description}</p>
+          <p className="text-[#2B3A72] mb-8 ">{description}</p>
         </div>
 
-        <div className="relative w-[50%] h-[50vh]">
+        <div className="relative w-full lg:w-3/5 h-60 lg:h-96">
           <Image
             src={img}
             alt="project image"
             layout="fill"
             objectFit="cover"
+            className="rounded-md"
             loading="lazy"
           />
         </div>

@@ -3,9 +3,9 @@ import Dropship from "../components/Dropship";
 
 const page = () => {
   return (
-    <div className="mt-48 text-[#0024AA]  ">
-      <div className="w-[55%] relative left-1/2 top-0 -translate-x-1/2">
-        <p className="text-[2rem] mb-5">
+    <div className="mt-48 text-[#0024AA]">
+      <div className="w-[55%] relative left-1/2 top-0 px-5 -translate-x-1/2 max-lg:w-[70%] max-md:w-[100%]">
+        <p className="text-[2rem] mb-5 max-lg:text-[1.8rem]">
           Transforming Ideas into Digital Masterpieces
         </p>
         <p>
@@ -16,8 +16,8 @@ const page = () => {
         </p>
       </div>
 
-      <div className="bg-[#FF8039] text-white py-10 text-sm mt-10">
-        <div className="w-[55%] font-semibold relative -translate-x-1/2 left-1/2 ">
+      <div className="bg-[#FF8039] text-white py-10 text-sm mt-10 px-5">
+        <div className="w-[55%] font-semibold relative -translate-x-1/2 left-1/2 max-lg:w-[70%] max-md:w-[100%]">
           {" "}
           <p className="mb-5 text-[1.5rem]">Recent Projects</p>
           <p className="mb-3">Showcasing Our Expertise</p>

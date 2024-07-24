@@ -7,15 +7,15 @@ const page = () => {
   return (
     <div className="mt-28">
       <div className="">
-        <div className="bg-[#E6EBFE] px-20 py-10 h-[50vh]">
-          <p className="text-[#0032F0] text-[1.5rem] relative mb-3 w-[70%] left-1/2 -translate-x-1/2">
-            Frequently asked questions
-          </p>
-          <p className="text-[1.1rem]">
-            Let's Connect and Build Something Amazing Together
-          </p>
+      <div className="bg-[#E6EBFE] h-[40vh]">
+          <div className="bg-[#E6EBFE] max-md:mt-5 w-[70%] left-1/2 -translate-x-1/2 max-lg:w-[80%] max-md:w-[90%] max-sm:w-[95%] max-lg:mt-10 relative max-2xl:top-[15%]  pt-5 px-3 max-sm:px-5 max-sm:pb-5">
+            <p className="text-[#0032F0]  text-[1.5rem] font-semibold max-md:text-[1.2rem] ">
+             Frequently Asked Questions
+            </p>
+            
+          </div>
         </div>
-        <div className="relative bottom-[30vh] p-5 rounded-md shadow-xl bg-white w-[70%] left-1/2 -translate-x-1/2">
+        <div className="relative bottom-[20vh] p-5 rounded-md shadow-xl bg-white w-[70%] left-1/2 max-lg:w-[80%] max-md:w-[90%] max-sm:w-[95%] -translate-x-1/2 max-md:bottom-[15vh]">
           <p className="border-b-[1px] py-5 text-[#121212] font-semibold">
             What is Bytesummit
           </p>
@@ -24,19 +24,19 @@ const page = () => {
             are both aesthetically pleasing and functional, satisfying business
             requirements
           </p>
-          
-          <Questions/>
-          <Questions/>
-          <Questions/>
-          <Questions/>
-          <Questions/>
-          <Questions/>
-          <Questions/>
-          <Questions/>
-          <Questions/>
-          <Questions/>
-          <Questions/>
-          
+
+          <Questions />
+          <Questions />
+          <Questions />
+          <Questions />
+          <Questions />
+          <Questions />
+          <Questions />
+          <Questions />
+          <Questions />
+          <Questions />
+          <Questions />
+
           <GetInTouch />
         </div>
       </div>
