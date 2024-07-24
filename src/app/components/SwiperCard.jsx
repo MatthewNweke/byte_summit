@@ -21,10 +21,10 @@ const SwiperCard = () => {
       </div>
 
       <p>
-        "I had no prior knowledge of blockchain, but your Starter Plan made it
+      &apos;&apos;I had no prior knowledge of blockchain, but your Starter Plan made it
         so easy to get started! The courses were well-structured, and the live
         Q&A sessions helped clarify my doubts. I now feel confident discussing
-        blockchain concepts. Thanks, Blockchain Mastery!"
+        blockchain concepts. Thanks, Blockchain Mastery!&apos;&apos;
       </p>
     </div>
   );

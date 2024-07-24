@@ -119,7 +119,7 @@ const Page = () => {
           </p>
           <p>
             Ready to start your journey with Bytesummit? Reach out today and
-            let's create something extraordinary together!
+            let&apos;s create something extraordinary together!
           </p>
         </div>
       </div>

@@ -7,7 +7,7 @@ const GetInTouch = () => {
       <div className="text-left mb-4 md:mb-0 flex-1 m">
         <p className="mb-3 lg:mb-5 text-lg lg:text-xl font-semibold">Still have questions?</p>
         <p className="text-sm lg:text-base">
-          Can't find the answer you're looking for? Please chat with our friendly team.
+          Can&apos;t find the answer you&apos;re looking for? Please chat with our friendly team.
         </p>
       </div>
       <button className="flex items-center justify-center px-5 py-3 bg-white text-black rounded-3xl text-sm lg:text-base gap-2 shadow-md hover:bg-gray-100 transition duration-300 max-w-xs  sm:max-w-sm md:max-w-md lg:max-w-lg">

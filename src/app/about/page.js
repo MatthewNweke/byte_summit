@@ -11,7 +11,7 @@ const Page = () => {
               About Us
             </p>
             <p className="max-md:text-sm">
-              Let's Connect and Build Something Amazing Together
+              Let&apos;s Connect and Build Something Amazing Together
             </p>
           </div>
         </div>
@@ -28,12 +28,12 @@ const Page = () => {
       </div>
 
       <div className="relative w-[90%] sm:w-[70%] left-1/2 transform -translate-x-1/2 text-[1.1rem] text-justify py-10">
-        At Pixel Perfect, we're passionate about creating impactful and engaging
-        experiences that are accessible to everyone. We're a team of skilled
+        At Pixel Perfect, we&apos;re passionate about creating impactful and engaging
+        experiences that are accessible to everyone. We&apos;re a team of skilled
         software engineers, designers, and project managers specializing in the
         entire cycle ranging from ideation to development and management of
         software products, website design and development, and logo design. We
-        believe a successful product starts with inclusivity. That's why we
+        believe a successful product starts with inclusivity. That&apos;s why we
         build products that are not only functional, visually stunning, and
         user-friendly but also adhere to accessibility best practices, ensuring
         that everyone, including people with disabilities, can navigate and
@@ -89,7 +89,7 @@ const Page = () => {
 
       <div className="mt-10 relative w-[90%] sm:w-[70%] left-1/2 transform -translate-x-1/2 text-[1.1rem] text-justify">
         <p className="text-[#5E5E5E] font-semibold mb-5">
-          Here's what sets us apart:
+          Here&apos;s what sets us apart:
         </p>
         <p>
           We are passionate, experienced, and inclusive. Our team of highly
@@ -99,9 +99,9 @@ const Page = () => {
           caters to everyone. We are results-oriented. We create entire
           experiences that are not only beautiful and accessible but also
           functional and align with your business goals. Ready to bring your
-          inclusive digital vision to life? Let's chat! We offer a free
+          inclusive digital vision to life? Let&apos;s chat! We offer a free
           consultation to discuss your project and see how we can help you
-          create a website that's impactful for everyone.
+          create a website that&apos;s impactful for everyone.
         </p>
         <button className="px-5 py-3 my-5 font-semibold rounded-3xl text-white bg-[#0032F0] text-sm cursor-pointer hover:bg-[#0020b3] max-lg:text-[1rem]">
           Contact Us

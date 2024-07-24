@@ -4,84 +4,63 @@ import Image from "next/image";
 const Page = () => {
   return (
     <div className="mt-28 relative w-full">
-      <div className="relative w-full min-h-[100vh]">
+      <div className="relative w-full min-h-[50vh] md:min-h-[100vh]">
         <Image
           src="/dropship_img2.svg"
           alt="Background Image"
           layout="fill"
           objectFit="cover"
           quality={100}
-          className="h-[100%]"
+          className="absolute inset-0"
         />
       </div>
 
-      <div className="px-10 mt-20 mb-10">
-        <p className="text-[#3B4F9B] text-[1.2rem] my-5 font-semibold">
+      <div className="px-4 md:px-10 mt-10 md:mt-20 mb-6 md:mb-10">
+        <p className="text-[#3B4F9B] text-xl md:text-2xl my-3 md:my-5 font-semibold">
           About Dropship
         </p>
-        <p>
+        <p className="text-sm md:text-base">
           We transform ideas and concepts into fully functional products that
           are both aesthetically pleasing and functional, satisfying business
-          requirementsWe transform ideas and concepts into fully functional
+          requirements. We transform ideas and concepts into fully functional
           products that are both aesthetically pleasing and functional,
-          satisfying business requirementsWe transform ideas and concepts into
-          fully functional products that are both aesthetically pleasing and
-          functional, satisfying business requirements We transform ideas and
-          concepts into fully functional products that are both aesthetically
-          pleasing and functional, satisfying business requirementsWe transform
-          ideas and concepts into fully functional products that are both
-          aesthetically pleasing and functional, satisfying business
-          requirementsWe transform ideas and concepts into fully functional
-          products that are both aesthetically pleasing and functional,
-          satisfying business requirements
+          satisfying business requirements.
         </p>
       </div>
 
-      <div className="px-10">
-        <p className="text-[#3B4F9B] text-[1.2rem] my-5 font-semibold">
-          Our role
+      <div className="px-4 md:px-10 mb-6 md:mb-10">
+        <p className="text-[#3B4F9B] text-xl md:text-2xl my-3 md:my-5 font-semibold">
+          Our Role
         </p>
-        <p>
+        <p className="text-sm md:text-base">
           We transform ideas and concepts into fully functional products that
           are both aesthetically pleasing and functional, satisfying business
-          requirementsWe transform ideas and concepts into fully functional
+          requirements. We transform ideas and concepts into fully functional
           products that are both aesthetically pleasing and functional,
-          satisfying business requirementsWe transform ideas and concepts into
-          fully functional products that are both aesthetically pleasing and
-          functional, satisfying business requirements We transform ideas and
-          concepts into fully functional products that are both aesthetically
-          pleasing and functional, satisfying business requirementsWe transform
-          ideas and concepts into fully functional products that are both
-          aesthetically pleasing and functional, satisfying business
-          requirementsWe transform ideas and concepts into fully functional
-          products that are both aesthetically pleasing and functional,
-          satisfying business requirements
+          satisfying business requirements.
         </p>
       </div>
 
-      <div className="flex justify-center gap-[10%] items-center mt-20">
-        <div className="relative w-[30%] h-[50vh]">
+      <div className="flex flex-col md:flex-row justify-center gap-6 md:gap-10 items-center mt-10 md:mt-20">
+        <div className="relative w-full md:w-[30%] h-[30vh] md:h-[50vh]">
           <Image
             src="/metrics_blue-img.svg"
             alt="metrics left Image"
             layout="fill"
             objectFit="contain"
             quality={100}
-            className=""
           />
         </div>
 
-        <div className="bg-[#ECEEF6] w-[30%] h-[50vh] rounded-lg">
-          <div className="relative w-[100%] h-[100%] rounded-lg">
-            <Image
-              src="/metrics_right.svg"
-              alt="metrics_right"
-              layout="fill"
-              objectFit="cover"
-              quality={100}
-              className="rounded-lg"
-            />
-          </div>
+        <div className="bg-[#ECEEF6] w-full md:w-[30%] h-[30vh] md:h-[50vh] rounded-lg relative">
+          <Image
+            src="/metrics_right.svg"
+            alt="metrics_right"
+            layout="fill"
+            objectFit="cover"
+            quality={100}
+            className="rounded-lg"
+          />
         </div>
       </div>
 
@@ -101,22 +80,21 @@ const Page = () => {
             <span className="font-semibold text-[#3B4F9B]">2M</span>
           </p>
         </div>
-        <div className="flex gap-5 items-center">
-          <button className="px-5 py-3 h-[3rem] my-5 text-center font-semibold  rounded-3xl text-white bg-[#0032F0] text-sm cursor-pointer max-lg:text-[1rem]">
+        <div className="flex flex-col md:flex-row gap-4 md:gap-6 mt-5 justify-center">
+          <button className="px-4 py-2 md:px-5 md:py-3 h-auto text-center font-semibold rounded-3xl text-white bg-[#0032F0] text-xs md:text-sm">
             Contact Us
           </button>
-          <button className="px-5 py-3 h-[3rem] my-5 flex items-center gap-2 justify-between text-center font-semibold shadow-xl border-[1px] rounded-3xl bg-white text-[#0032F0] text-sm cursor-pointer max-lg:text-[1rem]">
-          <span> View live site</span>
-          <div className="relative w-[2rem] h-[2rem] ">
-            <Image
-              src="/play_btn.svg"
-              alt="play_btn"
-              layout="fill"
-              objectFit="contain"
-              quality={100}
-              className=""
-            />
-          </div>
+          <button className="px-4 py-2 md:px-5 md:py-3 h-auto flex items-center gap-2 justify-center text-center font-semibold shadow-xl border rounded-3xl bg-white text-[#0032F0] text-xs md:text-sm">
+            <span>View live site</span>
+            <div className="w-5 h-5 md:w-6 md:h-6 relative">
+              <Image
+                src="/play_btn.svg"
+                alt="play_btn"
+                layout="fill"
+                objectFit="contain"
+                quality={100}
+              />
+            </div>
           </button>
         </div>
       </div>
