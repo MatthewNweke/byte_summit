@@ -5,7 +5,6 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "./css/Styles.module.css"; // Import your CSS file with transitions
 import SwiperCarousel from "./components/SwiperCarousel";
-import VerticalSwiper from "./components/VerticalSwiper";
 
 const Home = () => {
   const [textIndex, setTextIndex] = useState(0);
@@ -301,7 +300,7 @@ const Home = () => {
         </div>
 
         <div
-          className="w-full md:w-[25%] bg-contain bg-right-top bg-no-repeat shadow-xl rounded-3xl text-[1rem] p-5"
+          className="w-[25%] max-md:w-full  max-lg:w-[40%] bg-contain bg-right-top bg-no-repeat shadow-xl rounded-3xl text-[1rem] p-5"
           style={{ backgroundImage: "url('/bg_software.svg')" }}
         >
           <div className="relative w-16 h-16 text-[#2B3A72] mb-5">

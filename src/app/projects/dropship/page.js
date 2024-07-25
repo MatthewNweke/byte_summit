@@ -4,6 +4,22 @@ import Image from "next/image";
 const Page = () => {
   return (
     <div className="mt-28 relative w-full">
+      <div className="flex items-center justify-around p-3  max-sm:justify-start ">
+        <h2 className="text-[#3B4F9B] text-xl md:text-2xl my-3 md:my-5 font-semibold">
+          Dropship
+        </h2>
+        <div className="flex gap-5 items-center justify-center max-sm:hidden">
+          <button className="px-4 py-2 md:px-5 md:py-3 h-auto border text-center font-semibold rounded-lg text-[#0032F0] text-xs md:text-sm">
+            Mobile
+          </button>
+          <button className="px-4 py-2 md:px-5 md:py-3 h-auto border text-center font-semibold rounded-lg text-[#0032F0] text-xs md:text-sm">
+           Website
+          </button>
+          <button className="px-4 py-2 md:px-5 md:py-3 h-auto border text-center font-semibold rounded-lg  text-[#0032F0] text-xs md:text-sm">
+            Branding
+          </button>
+        </div>
+      </div>
       <div className="relative w-full min-h-[50vh] md:min-h-[100vh]">
         <Image
           src="/dropship_img2.svg"
@@ -12,13 +28,14 @@ const Page = () => {
           objectFit="cover"
           quality={100}
           className="absolute inset-0"
+          priority
         />
       </div>
 
       <div className="px-4 md:px-10 mt-10 md:mt-20 mb-6 md:mb-10">
-        <p className="text-[#3B4F9B] text-xl md:text-2xl my-3 md:my-5 font-semibold">
+        <h2 className="text-[#3B4F9B] text-xl md:text-2xl my-3 md:my-5 font-semibold">
           About Dropship
-        </p>
+        </h2>
         <p className="text-sm md:text-base">
           We transform ideas and concepts into fully functional products that
           are both aesthetically pleasing and functional, satisfying business
@@ -29,9 +46,9 @@ const Page = () => {
       </div>
 
       <div className="px-4 md:px-10 mb-6 md:mb-10">
-        <p className="text-[#3B4F9B] text-xl md:text-2xl my-3 md:my-5 font-semibold">
+        <h2 className="text-[#3B4F9B] text-xl md:text-2xl my-3 md:my-5 font-semibold">
           Our Role
-        </p>
+        </h2>
         <p className="text-sm md:text-base">
           We transform ideas and concepts into fully functional products that
           are both aesthetically pleasing and functional, satisfying business
@@ -41,32 +58,37 @@ const Page = () => {
         </p>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-center gap-6 md:gap-10 items-center mt-10 md:mt-20">
-        <div className="relative w-full md:w-[30%] h-[30vh] md:h-[50vh]">
+      <div className="flex flex-col w-[90%] md:w-[70%] mx-auto md:flex-row justify-between gap-6 md:gap-10 items-center mt-10 md:mt-20 p-6 md:p-10 rounded-xl">
+        <div className="relative w-full md:w-[40%] rounded-xl h-[30vh] md:h-[50vh]">
           <Image
             src="/metrics_blue-img.svg"
             alt="metrics left Image"
             layout="fill"
-            objectFit="contain"
+            objectFit="cover"
             quality={100}
+            className="rounded-2xl"
+            priority
           />
         </div>
 
-        <div className="bg-[#ECEEF6] w-full md:w-[30%] h-[30vh] md:h-[50vh] rounded-lg relative">
+        <div className="bg-[#ECEEF6] w-full md:w-[40%] h-[30vh] md:h-[50vh] rounded-2xl relative">
           <Image
             src="/metrics_right.svg"
             alt="metrics_right"
             layout="fill"
-            objectFit="cover"
+            objectFit="contain"
             quality={100}
-            className="rounded-lg"
+            className="rounded-2xl"
+            priority
           />
         </div>
       </div>
 
-      <div className="w-[70%] mt-5 relative left-1/2 -translate-x-1/2 ">
-        <p className="mb-5 text-[1.2rem] text-[#3B4F9B]">Metrics</p>
-        <div className="flex gap-5 items-center text-[#3B4F9B]">
+      <div className="w-[90%] md:w-[70%] mx-auto mt-5 p-6 rounded-xl">
+        <h3 className="mb-5 text-[1.3rem] text-[#3B4F9B] font-semibold">
+          Metrics
+        </h3>
+        <div className="flex text-sm flex-col md:flex-row gap-5 md:items-center text-[#3B4F9B]">
           <p>
             Work Duration:{" "}
             <span className="font-semibold text-[#3B4F9B]">12 Months</span>
@@ -80,7 +102,7 @@ const Page = () => {
             <span className="font-semibold text-[#3B4F9B]">2M</span>
           </p>
         </div>
-        <div className="flex flex-col md:flex-row gap-4 md:gap-6 mt-5 justify-center">
+        <div className="flex  gap-4 md:gap-6 mt-5">
           <button className="px-4 py-2 md:px-5 md:py-3 h-auto text-center font-semibold rounded-3xl text-white bg-[#0032F0] text-xs md:text-sm">
             Contact Us
           </button>
@@ -93,6 +115,7 @@ const Page = () => {
                 layout="fill"
                 objectFit="contain"
                 quality={100}
+                priority
               />
             </div>
           </button>

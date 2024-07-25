@@ -71,7 +71,7 @@ const Navbar = () => {
           { name: "Projects", href: "/projects" },
           { name: "Contact", href: "/contact" },
           { name: "About", href: "/about" },
-          { name: "FAQ", href: "/faqs/faq" }
+          { name: "FAQ", href: "/faq" }
         ].map((link) => (
           <div className="cursor-pointer" key={link.name}>
             <Link href={link.href}>
