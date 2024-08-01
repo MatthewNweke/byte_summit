@@ -3,9 +3,9 @@ import Dropship from "../components/Dropship";
 
 const page = () => {
   return (
-    <div className="mt-48 text-[#0024AA]">
+    <div className="mt-16 max-md:mt-10 text-[#0024AA]">
       <div className="w-[55%] relative left-1/2 top-0 px-5 -translate-x-1/2 max-lg:w-[70%] max-md:w-[100%]">
-        <p className="text-[2rem] mb-5 max-lg:text-[1.8rem]">
+        <p className=" text-xl font-semibold md:text-2xl xl:text-3xl mb-5">
           Transforming Ideas into Digital Masterpieces
         </p>
         <p>

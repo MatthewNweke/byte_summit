@@ -37,7 +37,11 @@
     max-height: 100px; /* Adjust according to content size */
   }
   
-
+/* .background_img{
+  background-size:contain;
+  background-repeat: no-repeat;
+  
+} */
 
   
 

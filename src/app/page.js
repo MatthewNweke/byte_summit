@@ -1,6 +1,5 @@
 "use client";
 import {SwiperSlide } from "swiper/react";
-
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "./css/Styles.module.css"; // Import your CSS file with transitions
@@ -10,7 +9,6 @@ const Home = () => {
   const [textIndex, setTextIndex] = useState(0);
   const [imageIndex, setImageIndex] = useState(0);
   const [inTransition, setInTransition] = useState(false);
-
   const texts = ["Product", "Website", "Software", "Applications"];
   const images = ["/img_slide1.svg", "/img_slide2.svg", "/img_slide3.svg"];
 
@@ -97,11 +95,7 @@ const Home = () => {
           />
         </div>
 
-        {/* <VerticalSwiper>
-          <SwiperSlide>Slide 1</SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-        </VerticalSwiper> */}
+     
       </div>
 
       <div className="bg-[#0032F0] pt-10 pb-10 max-md:pb-0  flex flex-col md:flex-row items-center justify-end  gap-[20%] max-xl:gap-[10%] max-xl:justify-center max-xl:px-5 mt-20 min-h-[60vh]">

@@ -3,51 +3,76 @@ import Image from "next/image";
 
 const Page = () => {
   return (
-    <div className="mt-28">
-      <div className="h-[80vh]  flex flex-col  max-md:h-[50vh]  ">
-        <div className="bg-[#E6EBFE] h-[50%]">
-          <div className="inline-block bg-[#E6EBFE] max-md:mt-5 max-lg:mt-10 relative max-2xl:top-[15%]  pt-5 px-3 max-sm:px-5 max-sm:pb-5  left-1/2 -translate-x-1/2">
-            <p className="text-[#0032F0]  text-[1.5rem] font-semibold max-md:text-[1.2rem] ">
+    <div className="">
+      {/* <div className="min-h-screen bg-blue-500 flex flex-col max-md:min-h-[80vh]">
+        <div className="bg-[#E6EBFE] flex-1 relative">
+          <div className="bg-red-500 flex flex-col justify-end max-w-screen-lg w-full px-6 py-3 mx-auto">
+            <p className="text-[#0032F0] text-xl font-semibold md:text-2xl">
               About Us
             </p>
-            <p className="max-md:text-sm">
-              Let&apos;s Connect and Build Something Amazing Together
+            <p className="text-sm md:text-base">
+              Let's Connect and Build Something Amazing Together
             </p>
           </div>
         </div>
-        <div className="relative w-[100%]   h-[50%] bottom-[25%] max-xl:bottom-[15%] max-lg:bottom-[10%] max-sm:bottom-[5%]">
-          <Image
-            src="/about_bg.svg"
-            alt="team"
-            layout="fill"
-            objectFit="contain"
-            loading="lazy"
-            className=""
-          />
+        <div className="relative w-full h-96 bg-[red]">
+          <div className="absolute w-full h-full  max-w-screen-lg mx-auto bottom-[25%] max-md:bottom-[10%] -translate-y-[25%] left-1/2 -translate-x-1/2">
+            <Image
+              src="/about_bg.svg"
+              alt="team"
+              layout="fill"
+              objectFit="contain"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div> */}
+      <div className="">
+        <div className="relative h-[70vh] mx-auto max-md:h-[60vh] max-sm:h-[50vh]">
+          <div className="bg-[#E6EBFE] w-[100%] absolute h-[60%]">
+            <div className=" h-[50%] mx-auto flex max-w-3xl flex-col justify-end py-5 px-3 max-sm:h-[60%]">
+              <p className="text-[#0032F0] text-xl font-semibold md:text-2xl xl:text-3xl mb-1 ">
+                About Us
+              </p>
+              <p className="md:text-lg text-md">
+                Let's Connect and Build Something Amazing Together
+              </p>
+            </div>
+          </div>
+          <div className="absolute max-sm:w-[95%] w-full h-[70%] max-sm:h-[60%] max-w-3xl bottom-0 mx-auto left-1/2 -translate-x-1/2">
+            <Image
+              src="/about_bg.svg"
+              alt="team"
+              layout="fill"
+              objectFit="contain"
+              loading="lazy"
+            />
+          </div>
         </div>
       </div>
 
-      <div className="relative w-[90%] sm:w-[70%] left-1/2 transform -translate-x-1/2 text-[1.1rem] text-justify py-10">
-        At Pixel Perfect, we&apos;re passionate about creating impactful and engaging
-        experiences that are accessible to everyone. We&apos;re a team of skilled
-        software engineers, designers, and project managers specializing in the
-        entire cycle ranging from ideation to development and management of
-        software products, website design and development, and logo design. We
-        believe a successful product starts with inclusivity. That&apos;s why we
-        build products that are not only functional, visually stunning, and
-        user-friendly but also adhere to accessibility best practices, ensuring
-        that everyone, including people with disabilities, can navigate and
-        interact with your software products and websites seamlessly.
+      <div className="relative w-[90%] sm:w-[70%] left-1/2 transform -translate-x-1/2 text-[1.1rem] text-justify py-10 max-md:py-3 ">
+        At Pixel Perfect, we&apos;re passionate about creating impactful and
+        engaging experiences that are accessible to everyone. We&apos;re a team
+        of skilled software engineers, designers, and project managers
+        specializing in the entire cycle ranging from ideation to development
+        and management of software products, website design and development, and
+        logo design. We believe a successful product starts with inclusivity.
+        That&apos;s why we build products that are not only functional, visually
+        stunning, and user-friendly but also adhere to accessibility best
+        practices, ensuring that everyone, including people with disabilities,
+        can navigate and interact with your software products and websites
+        seamlessly.
       </div>
 
-      <div className="flex items-center max-md:flex-col justify-between mt-20 relative w-[70%] max-lg:w-[100%] left-1/2 transform -translate-x-1/2 gap-10 sm:gap-0">
+      <div className="flex items-center max-md:flex-col justify-between mt-20 relative w-[70%] max-lg:w-[100%] left-1/2 transform -translate-x-1/2 gap-10 sm:gap-0 max-md:mt-10">
         <div
           className="w-full lg:w-[45%] min-h-[80vh] shadow-xl rounded-md p-8 bg-no-repeat bg-right-bottom"
           style={{
             backgroundImage: "url('/approach_img-big.svg')",
           }}
         >
-          <p className="text-[#1A2244] font-semibold text-[1.2rem] mb-5">
+          <p className="text-[#1A2244] font-semibold text-[1.2rem] mb-5 max-md:mb-3">
             Our Approach
           </p>
           <p>
@@ -66,10 +91,10 @@ const Page = () => {
         <div
           className="w-full lg:w-[45%] relative shadow-xl min-h-[80vh] rounded-md p-8 bg-[#FF8039] text-white bg-no-repeat bg-right-bottom"
           style={{
-            backgroundImage: "url('/team_img-small.svg')",
+            backgroundImage: "url('/team.svg')",
           }}
         >
-          <p className="text-[1.2rem] font-semibold mb-5">Our Team</p>
+          <p className="text-[1.2rem] font-semibold mb-5 max-md:mb-3">Our Team</p>
           <p>
             We are dedicated to exceeding your expectations. We are passionate
             about what we do, and we take pride in building long-term

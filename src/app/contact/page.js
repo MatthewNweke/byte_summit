@@ -24,11 +24,13 @@ const Page = () => {
   };
 
   return (
-    <div className="mt-48 px-4 md:px-0">
-      <div className="flex flex-col justify-center gap-[10%] md:flex-row">
-        <div className="lg:w-[40%] md:w-[80%] sm:w-[100%] text-[1.1rem]">
+    <div className="mt-16 px-4 md:px-0 max-md:mt-10">
+      <div className="flex flex-col justify-end  gap-[20%] md:flex-row max-lg:justify-center">
+        <div
+          className="max-sm:w-[100%] max-md:w-[80%] max-md:mx-auto max-lg:w-[60%] max-xl:w-[35%] w-[30%] text-[1.1rem]"
+        >
           <div className="mb-5">
-            <p className="text-[#0032F0] text-[2rem] font-semibold mb-5">
+            <p className="text-[#0032F0] text-xl font-semibold md:text-2xl xl:text-3xl mb-5">
               Contact our team
             </p>
             <p className="md:w-[70%]">
@@ -52,7 +54,7 @@ const Page = () => {
                 id="fullname"
                 value={formData.fullname}
                 onChange={handleChange}
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                className="mt-1 block w-full px-3 py-3  bg-[#F8F8F8] rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                 required
                 placeholder="Full Name"
               />
@@ -64,7 +66,7 @@ const Page = () => {
                 id="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                className="mt-1 block w-full px-3 py-3 bg-[#F8F8F8] rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                 required
                 placeholder="Email"
               />
@@ -76,7 +78,7 @@ const Page = () => {
                 id="phone"
                 value={formData.phone}
                 onChange={handleChange}
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                className="mt-1 block w-full px-3 py-3 bg-[#F8F8F8] rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                 required
                 placeholder="Phone number"
               />
@@ -87,24 +89,24 @@ const Page = () => {
                 id="message"
                 value={formData.message}
                 onChange={handleChange}
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                className="mt-1 block w-full px-3 py-3 bg-[#F8F8F8] rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                 required
                 placeholder="Message"
               />
             </div>
             <button
               type="submit"
-              className="w-full px-4 py-2 bg-[#0032F0] text-white font-semibold shadow-md rounded-3xl focus:outline-none focus:ring-2"
+              className="w-full px-4 py-3 bg-[#0032F0] text-sm text-white font-semibold shadow-md rounded-3xl"
             >
               Send Message
             </button>
           </form>
         </div>
 
-        <div className="relative h-auto md:w-1/3 hidden lg:block">
+        <div className="relative max-h-[70vh] w-1/3 hidden lg:block max-xl:max-h-[90vh]">
           <Image
-            src="/img_slide1.svg"
-            alt="Image Slide"
+            src="/contact_img.svg"
+            alt="contact"
             layout="fill"
             objectFit="contain"
             loading="lazy"
@@ -131,10 +133,10 @@ const Page = () => {
           and industry insights from Bytesummit.
         </p>
 
-        <ul className="flex justify-center md:justify-start gap-3 items-center mb-8">
+        <ul className="flex  md:justify-start gap-3 items-center mb-8">
           <li className="relative h-6 w-6">
             <Image
-              src="/twitter.png"
+              src="/twitter_blue.svg"
               alt="Twitter Logo"
               layout="fill"
               objectFit="contain"
@@ -144,7 +146,7 @@ const Page = () => {
           </li>
           <li className="relative h-6 w-6">
             <Image
-              src="/telegram.png"
+              src="/telegram_blue.svg"
               alt="Telegram Logo"
               layout="fill"
               objectFit="contain"
@@ -154,7 +156,7 @@ const Page = () => {
           </li>
           <li className="relative h-6 w-6">
             <Image
-              src="/instagram.png"
+              src="/instagram_blue.svg"
               alt="Instagram Logo"
               layout="fill"
               objectFit="contain"
@@ -164,7 +166,7 @@ const Page = () => {
           </li>
           <li className="relative h-6 w-6">
             <Image
-              src="/facebook.png"
+              src="/facebook_blue.svg"
               alt="Facebook Logo"
               layout="fill"
               objectFit="contain"
@@ -174,7 +176,7 @@ const Page = () => {
           </li>
           <li className="relative h-6 w-6">
             <Image
-              src="/linkedin.png"
+              src="/linkedin_blue.svg"
               alt="LinkedIn Logo"
               layout="fill"
               objectFit="contain"
@@ -183,7 +185,9 @@ const Page = () => {
             />
           </li>
         </ul>
-        <p className="font-semibold text-sm text-[#292D32]">@OfficialBytesummit.</p>
+        <p className=" text-sm text-[#292D32]">
+          @OfficialBytesummit.
+        </p>
       </div>
     </div>
   );

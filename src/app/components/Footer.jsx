@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className="mt-24 min-h-[60vh] text-white bg-[#0032F0]">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 max-md:py-6">
-        <div className="flex justify-around max-md:flex-col">
+        <div className="flex justify-between max-md:flex-col">
           {/* Company Column */}
           <div className="flex flex-col justify-start min-h-[15rem] max-md:min-h-[5rem] max-w-[33%] max-md:max-w-[100%]">
             <div className="relative h-[2rem] w-40 mb-4">
