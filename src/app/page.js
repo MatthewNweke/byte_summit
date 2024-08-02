@@ -1,5 +1,5 @@
 "use client";
-import {SwiperSlide } from "swiper/react";
+import { SwiperSlide } from "swiper/react";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "./css/Styles.module.css"; // Import your CSS file with transitions
@@ -81,7 +81,10 @@ const Home = () => {
             </button>
           </div>
         </div>
-        <div className="relative w-[30%] h-[50vh] max-lg:w-[100%] ">
+        <div className="relative w-[30vw] h-[50vh] max-lg:w-[100%] bg-[red] bg-cover"  style={{ backgroundImage: "url('/home.svg')" }}>
+          
+        </div>
+        {/* <div className="relative w-[30%] h-[50vh] max-lg:w-[100%] ">
           <Image
             key={imageIndex}
             src={images[imageIndex]}
@@ -93,13 +96,11 @@ const Home = () => {
               inTransition ? styles["slide-exit"] : styles["slide-enter"]
             }
           />
-        </div>
-
-     
+        </div> */}
       </div>
 
-      <div className="bg-[#0032F0] pt-10 pb-10 max-md:pb-0  flex flex-col md:flex-row items-center justify-end  gap-[20%] max-xl:gap-[10%] max-xl:justify-center max-xl:px-5 mt-20 min-h-[60vh]">
-        <div className="text-white text-[1rem] w-[80%] md:w-[50%] lg:w-[30%] text-center md:text-left mb-10 md:mb-0">
+      <div className="bg-[#0032F0] pt-10 pb-10 max-md:pb-0  flex flex-col md:flex-row items-center justify-end  gap-[20%] max-xl:gap-[10%]  max-xl:px-5 mt-20 min-h-[60vh]">
+        <div className="text-white text-[1rem] w-[80%] md:w-[50%] lg:w-[30%]  mb-10 md:mb-0">
           <p className="text-[2rem] mb-5 md:mb-10">At Bytesummit</p>
           <p>
             We believe in the power of innovation and design to drive business
@@ -108,6 +109,24 @@ const Home = () => {
           </p>
         </div>
         <div className="relative w-[80%] lg:w-[50%] xl:w-[40%] h-[60vh] max-md:hidden inline">
+          <div className="absolute w-[1.5rem] h-[1.5rem] right-28 top-6">
+            <Image
+              src="circle.svg"
+              alt="circle"
+              layout="fill"
+              objectFit="cover"
+              loading="lazy"
+            />
+          </div>
+          <div className="absolute w-[1.5rem] h-[1.5rem] right-28 bottom-6">
+            <Image
+              src="star.svg"
+              alt="star"
+              layout="fill"
+              objectFit="cover"
+              loading="lazy"
+            />
+          </div>
           <Image
             src="Screen_displays.svg"
             alt="Screen"
@@ -127,12 +146,12 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="w-[80%] -translate-x-1/2 left-1/2 relative">
-        <p className="text-[1.5rem] text-[#0024AA] ml-20  my-10 mt-20  font-semibold">
+      <div className="w-[80%] -translate-x-1/2 left-1/2 relative max-lg:w-[90%]">
+        <p className="text-[1.5rem] text-[#0024AA] ml-20 mt-10 font-semibold max-lg:ml-0">
           Our Process
         </p>
       </div>
-      <div className="mt-20 w-[80%] max-w-full mx-auto relative max-xl:w-[100%] max-xl:px-3">
+      <div className="mt-10 w-[80%] max-w-full mx-auto relative max-xl:w-[100%] max-xl:px-3">
         <div className="flex justify-center gap-[5%] items-center flex-wrap max-xl:">
           <div
             className="w-[25%]  max-lg:w-[45%] max-sm:w-[100%] py-5 border-[#B0BFFA] relative border-[1px] min-h-[50vh] rounded-md bg-contain bg-left-bottom bg-no-repeat mb-10"
@@ -211,13 +230,13 @@ const Home = () => {
       </div>
 
       <div>
-        <div className="w-[80%] -translate-x-1/2 left-1/2 relative">
-          <p className="text-[1.5rem] text-[#0024AA] ml-20  my-10 font-semibold">
+        <div className="w-[80%] -translate-x-1/2 left-1/2 relative max-lg:w-[90%]">
+          <p className="text-[1.5rem] text-[#0024AA] ml-20  mt-10 font-semibold max-lg:ml-0">
             What We Offer
           </p>
         </div>
       </div>
-      <div className="flex flex-col-reverse md:flex-row justify-center gap-10 md:gap-[5%] mt-20 px-5">
+      <div className="flex flex-col-reverse md:flex-row justify-center gap-10 md:gap-[5%] mt-10 px-5">
         <div className="flex flex-col w-full md:w-[40%] gap-10">
           <div
             className="shadow-xl p-5 rounded-3xl bg-contain bg-right-top bg-no-repeat"
