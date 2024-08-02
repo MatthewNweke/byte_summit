@@ -30,10 +30,10 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="mt-48">
+    <div className="mt-16 max-md:mt-10">
       <div className="flex justify-center max-lg:flex-wrap max-xl:px-5 max-xl:justify-around max-lg:justify-center max-lg:items-center max-lg:gap-20">
         <div className="flex flex-col w-[40%] max-lg:w-[60%] max-md:w-[80%] max-sm:w-[100%]">
-          <div className="montserrat-bold text-[2.5rem] w-[70%] max-xl:w-auto max-lg:w-[100%]  max-2xl:text-[2rem] font-semibold">
+          <div className="montserrat-bold text-3xl w-[70%] max-xl:w-auto max-lg:w-[100%]  max-2xl:text-2xl font-semibold">
             <span>Let&lsquo;s build your dream </span>
             <span
               key={textIndex}

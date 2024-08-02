@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Page = () => {
   return (
-    <div className="mt-28 relative w-full">
+    <div className="relative w-full">
       <div className="flex items-center justify-around p-3  max-sm:justify-start ">
         <h2 className="text-[#3B4F9B] text-xl md:text-2xl my-3 md:my-5 font-semibold">
           Dropship

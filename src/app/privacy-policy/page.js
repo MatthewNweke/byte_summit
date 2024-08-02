@@ -4,7 +4,6 @@ import "../css/Styles.module.css";
 
 const page = () => {
   return (
-    <div className="">
       <div className="">
         <div className="bg-[#E6EBFE] h-[40vh]">
           <div className="bg-[#E6EBFE] max-md:mt-5 w-[70%] left-1/2 -translate-x-1/2 max-lg:w-[80%] max-md:w-[90%] max-sm:w-[95%] max-lg:mt-10 relative max-2xl:top-[15%]  pt-5 px-3 max-sm:px-5 max-sm:pb-5">
@@ -138,10 +137,8 @@ const page = () => {
               </p>
             </li>
           </ol>
-
           <GetInTouch />
         </div>
-      </div>
     </div>
   );
 };

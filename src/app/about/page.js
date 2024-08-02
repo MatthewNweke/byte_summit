@@ -35,7 +35,7 @@ const Page = () => {
                 About Us
               </p>
               <p className="md:text-lg text-md">
-                Let's Connect and Build Something Amazing Together
+                Let&apos;s Connect and Build Something Amazing Together
               </p>
             </div>
           </div>
