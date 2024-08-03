@@ -81,8 +81,18 @@ const Home = () => {
             </button>
           </div>
         </div>
-        <div className="relative w-[30vw] h-[50vh] max-lg:w-[100%] bg-[red] bg-cover"  style={{ backgroundImage: "url('/home.svg')" }}>
-          
+        <div className="relative w-[30%] h-[50vh] max-lg:w-[100%] ">
+          <Image
+            key={imageIndex}
+            src={images[imageIndex]}
+            alt="Image Slide"
+            layout="fill"
+            objectFit="contain"
+            loading="lazy"
+            className={
+              inTransition ? styles["slide-exit"] : styles["slide-enter"]
+            }
+          />
         </div>
         {/* <div className="relative w-[30%] h-[50vh] max-lg:w-[100%] ">
           <Image

@@ -6,15 +6,15 @@ import Image from "next/image";
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setScrolled] = useState(false);
-  const [activeLink, setActiveLink] = useState(null);
+  const [activeLinks, setActiveLinks] = useState([]);
 
   useEffect(() => {
-    // Retrieve the active link from localStorage
-    const storedActiveLink = localStorage.getItem("activeLink");
-    if (storedActiveLink) {
-      setActiveLink(storedActiveLink);
+    // Retrieve the active links from localStorage
+    const storedActiveLinks = JSON.parse(localStorage.getItem("activeLinks"));
+    if (storedActiveLinks) {
+      setActiveLinks(storedActiveLinks);
     } else {
-      setActiveLink("Home"); // Default to "Home" if no value is found in localStorage
+      setActiveLinks(["Home"]); // Default to ["Home"] if no value is found in localStorage
     }
 
     const handleScroll = () => {
@@ -49,8 +49,12 @@ const Navbar = () => {
   };
 
   const handleLinkClick = (link) => {
-    setActiveLink(link);
-    localStorage.setItem("activeLink", link); // Store the active link in localStorage
+    let newActiveLinks = [link];
+    if (link === "About") {
+      newActiveLinks = ["About", "Contact"];
+    }
+    setActiveLinks(newActiveLinks);
+    localStorage.setItem("activeLinks", JSON.stringify(newActiveLinks)); // Store the active links in localStorage
     setMenuOpen(false); 
   };
 
@@ -83,9 +87,10 @@ const Navbar = () => {
                 <p
                   onClick={() => handleLinkClick(link.name)}
                   className={`font-semibold py-2 px-4 rounded-3xl transition-colors duration-200 ${
-                    activeLink === link.name
-                      ? "text-white bg-[#0032F0]"
-                      : "text-[#1A2244] hover:bg-gray-200"
+                    link.name === "About" ? "py-3 px-4" : "py-2 px-4"
+                  } ${activeLinks.includes(link.name)
+                    ? "text-white bg-[#0032F0]"
+                    : "text-[#1A2244] hover:bg-gray-200"
                   }`}
                 >
                   {link.name}
@@ -146,9 +151,10 @@ const Navbar = () => {
               <p
                 onClick={() => handleLinkClick(link.name)}
                 className={`px-5 py-3 text-center font-semibold w-[60vw] rounded-3xl text-sm cursor-pointer ${
-                  activeLink === link.name
-                    ? "text-white bg-[#0032F0]"
-                    : "text-[#1A2244] hover:bg-gray-200"
+                  link.name === "About" ? "py-5 px-7" : "py-3 px-5"
+                } ${activeLinks.includes(link.name)
+                  ? "text-white bg-[#0032F0]"
+                  : "text-[#1A2244] hover:bg-gray-200"
                 }`}
               >
                 {link.name}
