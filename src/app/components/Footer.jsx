@@ -132,9 +132,15 @@ const Footer = () => {
                 <span>Trademark & Copyright</span>
               </li>
 
-              <li className="mb-2 text-[0.9rem] max-sm:text-[0.8rem]">
+              {/* <li className="mb-2 text-[0.9rem] max-sm:text-[0.8rem]">
                 <span>FAQ&apos;s</span>
-              </li>
+              </li> */}
+
+              <Link href="/faq">
+                <li className="mb-2 text-[0.9rem]">
+                <span>FAQ&apos;s</span>
+                </li>
+              </Link>
             </ul>
           </div>
 
@@ -142,12 +148,16 @@ const Footer = () => {
           <div className="flex flex-col justify-start">
             <h3 className="text-lg font-semibold mb-4">Resources</h3>
             <ul>
-              <li className="mb-2 text-[0.9rem] max-sm:text-[0.8rem]">
-                <span>Terms of Service</span>
-              </li>
-              <li className="mb-2 text-[0.9rem] max-sm:text-[0.8rem]">
-                <span>Privacy Policy</span>
-              </li>
+              <Link href="/terms">
+                <li className="mb-2 text-[0.9rem]">
+                  <span>Terms of service</span>
+                </li>
+              </Link>
+              <Link href="/privacy-policy">
+                <li className="mb-2 text-[0.9rem]">
+                  <span>Privacy Policy</span>
+                </li>
+              </Link>
               <li className="mb-2 text-[0.9rem] max-sm:text-[0.8rem]">
                 <span>Cookies</span>
               </li>
