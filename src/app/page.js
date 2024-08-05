@@ -1,49 +1,17 @@
 "use client";
-import { SwiperSlide } from "swiper/react";
-import React, { useState, useEffect } from "react";
+
 import Image from "next/image";
-import styles from "./css/Styles.module.css"; // Import your CSS file with transitions
-import SwiperCarousel from "./components/SwiperCarousel";
+import VerticalCarousel from "./components/VerticalCarousel";
+import VerticalTextCarousel from "./components/VerticalTextCarousel";
 
 const Home = () => {
-  const [textIndex, setTextIndex] = useState(0);
-  const [imageIndex, setImageIndex] = useState(0);
-  const [inTransition, setInTransition] = useState(false);
-  const texts = ["Product", "Website", "Software", "Applications"];
-  const images = ["/img_slide1.svg", "/img_slide2.svg", "/img_slide3.svg"];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setInTransition(true);
-      setTimeout(() => {
-        setTextIndex((prevIndex) =>
-          prevIndex === texts.length - 1 ? 0 : prevIndex + 1
-        );
-        setImageIndex((prevIndex) =>
-          prevIndex === images.length - 1 ? 0 : prevIndex + 1
-        );
-        setInTransition(false);
-      }, 1000); // exit animation duration
-    }, 3000); // interval between slides
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <div className="mt-16 max-md:mt-10">
       <div className="flex justify-center max-lg:flex-wrap max-xl:px-5 max-xl:justify-around max-lg:justify-center max-lg:items-center max-lg:gap-20">
         <div className="flex flex-col w-[40%] max-lg:w-[60%] max-md:w-[80%] max-sm:w-[100%]">
-          <div className="montserrat-bold text-3xl w-[70%] max-xl:w-auto max-lg:w-[100%]  max-2xl:text-2xl font-semibold">
-            <span>Let&lsquo;s build your dream </span>
-            <span
-              key={textIndex}
-              className={`text-[#FF8039] ${
-                inTransition ? styles["slide-exit"] : styles["slide-enter"]
-              }`}
-            >
-              {texts[textIndex]}
-            </span>
-            <span> together</span>
+          <div className="montserrat-bold text-3xl w-[70%] max-xl:w-auto max-lg:w-[100%] max-2xl:text-2xl font-semibold">
+            <span>Let&rsquo;s build your dream <VerticalTextCarousel /></span>
+              
           </div>
           <div className="w-[65%] mt-10 text-[1.1rem] max-lg:w-[100%]">
             We transform ideas and concepts into fully functional products that
@@ -81,34 +49,87 @@ const Home = () => {
             </button>
           </div>
         </div>
-        <div className="relative w-[30%] h-[50vh] max-lg:w-[100%] ">
-          <Image
-            key={imageIndex}
-            src={images[imageIndex]}
-            alt="Image Slide"
-            layout="fill"
-            objectFit="contain"
-            loading="lazy"
-            className={
-              inTransition ? styles["slide-exit"] : styles["slide-enter"]
-            }
-          />
-        </div>
-        {/* <div className="relative w-[30%] h-[50vh] max-lg:w-[100%] ">
-          <Image
-            key={imageIndex}
-            src={images[imageIndex]}
-            alt="Image Slide"
-            layout="fill"
-            objectFit="contain"
-            loading="lazy"
-            className={
-              inTransition ? styles["slide-exit"] : styles["slide-enter"]
-            }
-          />
-        </div> */}
-      </div>
 
+        {/* This section is for a vertical carousel images;different images will be displayed but in a vertical direction*/}
+        <div className="p-4 overflow-hidden">
+          <div className="flex gap-5 justify-center relative top-10">
+            <div className="shadow-2xl h-32 w-32 sm:h-40 sm:w-40 relative max-sm:hidden">
+              <div className="absolute w-6 h-6 sm:w-8 sm:h-8 right-0">
+                <Image
+                  src="/rect_blue.svg"
+                  alt="rect_blue"
+                  layout="fill"
+                  objectFit="contain"
+                  className="rounded-xl"
+                />
+              </div>
+            </div>
+            <div className="shadow-2xl h-32 w-32 sm:h-40 sm:w-40 relative max-sm:shadow-none">
+              <div className="absolute w-6 h-6 sm:w-8 sm:h-8 top-2 right-2 max-sm:hidden">
+                <Image
+                  src="/rect_orange.svg"
+                  alt="rect_orange"
+                  layout="fill"
+                  objectFit="contain"
+                  className="rounded-xl"
+                />
+              </div>
+            </div>
+            <div className="shadow-2xl h-32 w-32 sm:h-40 sm:w-40 relative max-sm:shadow-none"></div>
+            <div className="relative w-6 h-6 sm:w-8 sm:h-8 left-1/5 bottom-0 max-sm:top-[4rem] max-sm:left-[1.2rem]">
+              <Image
+                src="/circle_blue.svg"
+                alt="circle_blue"
+                layout="fill"
+                objectFit="contain"
+                className="rounded-xl"
+              />
+            </div>
+          </div>
+
+          <VerticalCarousel />
+
+          <div className="flex flex-wrap justify-between relative bottom-10">
+            <div className="shadow-2xl h-32 w-32 sm:h-40 sm:w-40 relative max-sm:shadow-none"></div>
+            <div className="flex -z-10 max-sm:hidden">
+              <div className="shadow-2xl h-32 w-32 sm:h-40 sm:w-40 bg-white z-10 relative"></div>
+              <div className="shadow-2xl h-32 w-32 sm:h-40 sm:w-40 bg-white relative top-10 right-10 -z-10"></div>
+            </div>
+          </div>
+
+          <div className="flex flex-wrap justify-between relative bottom-12 lg:bottom-16">
+            <div>
+              <div className="relative w-6 h-6 sm:w-8 sm:h-8">
+                <Image
+                  src="/star_orange.svg"
+                  alt="star"
+                  layout="fill"
+                  objectFit="contain"
+                  className="rounded-xl"
+                />
+              </div>
+              <div className="relative w-6 h-6 sm:w-8 sm:h-8 lg:left-24 lg:top-12 left-12 top-8">
+                <Image
+                  src="/star_blue.svg"
+                  alt="star"
+                  layout="fill"
+                  objectFit="contain"
+                  className="rounded-xl"
+                />
+              </div>
+            </div>
+            <div className="relative w-6 h-6 sm:w-8 sm:h-8 bottom-16 lg:bottom-24 right-12 lg:right-24">
+              <Image
+                src="/star_blue.svg"
+                alt="star"
+                layout="fill"
+                objectFit="contain"
+                className="rounded-xl"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="bg-[#0032F0] pt-10 pb-10 max-md:pb-0  flex flex-col md:flex-row items-center justify-end  gap-[20%] max-xl:gap-[10%]  max-xl:px-5 mt-20 min-h-[60vh]">
         <div className="text-white text-[1rem] w-[80%] md:w-[50%] lg:w-[30%]  mb-10 md:mb-0">
           <p className="text-[2rem] mb-5 md:mb-10">At Bytesummit</p>
@@ -373,10 +394,6 @@ const Home = () => {
             />
           </div>
         </div>
-      </div>
-
-      <div className="mt-20">
-        <SwiperCarousel />
       </div>
     </div>
   );

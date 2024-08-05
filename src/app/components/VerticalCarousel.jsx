@@ -1,54 +1,41 @@
-// components/VerticalCarousel.js
-import React, { useEffect, useRef, useState } from 'react';
+"use client";
 
-const VerticalCarousel = ({ items }) => {
-  const carouselRef = useRef(null);
-  const [isAnimating, setIsAnimating] = useState(false);
-  
+import { useState, useEffect, useRef } from 'react';
+import Image from "next/image";
+
+const VerticalCarousel = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Array of image sources for the carousel
+  const images = [
+    "/img_slide1.svg",
+    "/img_slide2.svg", // Add more image sources here
+    "/img_slide3.svg",
+  ];
+
   useEffect(() => {
-    const handleScroll = () => {
-      if (carouselRef.current && !isAnimating) {
-        const { scrollTop, scrollHeight, clientHeight } = carouselRef.current;
-        if (scrollTop + clientHeight >= scrollHeight) {
-          carouselRef.current.scrollTop = 0;
-        }
-      }
-    };
-
     const interval = setInterval(() => {
-      setIsAnimating(true);
-      carouselRef.current.scrollBy({ top: 1, behavior: 'smooth' });
-      setIsAnimating(false);
-    }, 30);
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000); // Change slides every 3 seconds
 
-    carouselRef.current.addEventListener('scroll', handleScroll);
-    return () => {
-      clearInterval(interval);
-      carouselRef.current.removeEventListener('scroll', handleScroll);
-    };
-  }, [isAnimating]);
+    return () => clearInterval(interval);
+  }, [images.length]);
 
   return (
-    <div className="relative overflow-hidden h-64">
+    <div className="relative h-[50vh] overflow-hidden">
       <div
-        ref={carouselRef}
-        className="absolute top-0 left-0 w-full h-full overflow-auto flex flex-col"
+        className="absolute inset-0 flex flex-col"
+        style={{ transform: `translateY(-${currentIndex * 100}%)`, transition: 'transform 0.5s ease-in-out' }}
       >
-        {items.map((item, index) => (
-          <div
-            key={index}
-            className="flex-none h-64 flex items-center justify-center bg-gray-200 border-b border-gray-300"
-          >
-            {item}
-          </div>
-        ))}
-        {/* Duplicate the items for the infinite effect */}
-        {items.map((item, index) => (
-          <div
-            key={`duplicate-${index}`}
-            className="flex-none h-64 flex items-center justify-center bg-gray-200 border-b border-gray-300"
-          >
-            {item}
+        {images.map((src, index) => (
+          <div key={index} className="flex-shrink-0 h-full w-full relative">
+            <Image
+              src={src}
+              alt={`slide-${index}`}
+              layout="fill"
+              objectFit="contain"
+              className="rounded-xl"
+            />
           </div>
         ))}
       </div>
