@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 const VerticalTextCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Array of items for the carousel
+ 
   const items = ["Products", "Websites", "Software", "Applications"];
 
   useEffect(() => {
@@ -15,24 +15,26 @@ const VerticalTextCarousel = () => {
   }, [items.length]);
 
   return (
-    <div className="relative h-[2em]  flex items-center justify-center overflow-hidden">
+    <div className="relative h-[2em] items-center flex justify-start overflow-hidden">
+        <span className="flex items-center">dream</span>
+        
       <div
-        className="absolute inset-0 flex flex-col text-[#FF8039]"
+        className="absolute inset-0  flex flex-col text-[#FF8039]"
         style={{
           transform: `translateY(-${currentIndex * 100}%)`,
           transition: "transform 0.5s ease-in-out",
         }}
       >
+       
         {items.map((item, index) => (
           <div
             key={index}
-            className="flex-shrink-0 h-full w-full flex items-center  text-3xl font-semibold"
+            className="flex-shrink-0   h-full w-full justify-end flex items-center  text-4xl font-semibold max-2xl:text-3xl max-md:text-2xl"
           >
             {item}
           </div>
         ))}
       </div>
-
     </div>
   );
 };

@@ -7,23 +7,27 @@ import VerticalTextCarousel from "./components/VerticalTextCarousel";
 const Home = () => {
   return (
     <div className="mt-16 max-md:mt-10">
-      <div className="flex justify-center max-lg:flex-wrap max-xl:px-5 max-xl:justify-around max-lg:justify-center max-lg:items-center max-lg:gap-20">
-        <div className="flex flex-col w-[40%] max-lg:w-[60%] max-md:w-[80%] max-sm:w-[100%]">
-          <div className="montserrat-bold text-3xl w-[70%] max-xl:w-auto max-lg:w-[100%] max-2xl:text-2xl font-semibold">
-            <span>Let&rsquo;s build your dream <VerticalTextCarousel /></span>
+      <div className="flex justify-center items-center max-lg:flex-wrap max-xl:px-5 max-xl:justify-around max-lg:justify-center max-lg:items-center max-lg:gap-20">
+        <div className="flex flex-col  h-[70vh] w-[40%] justify-between max-2xl:w-[50%] max-lg:w-[60%] max-md:w-[80%] max-sm:w-[100%]">
+          <div className="montserrat-bold text-4xl  max-w-[60%] max-sm:max-w-[70%] max-xl:max-w-[65%] max-lg:max-w-[60%] max-xl:w-auto max-lg:w-[100%] max-3xl:text-2xl max-md:text-2xl font-semibold">
+            <span className="text-4xl font-semibold max-2xl:text-3xl max-md:text-2xl">
+              Let&rsquo;s build your  <span><VerticalTextCarousel/></span> together
+            </span>
+            
+              {/* <VerticalTextCarousel /> */}
               
+            
           </div>
-          <div className="w-[65%] mt-10 text-[1.1rem] max-lg:w-[100%]">
+          <div className="w-[65%] text-[1.2rem] max-lg:w-[100%]">
             We transform ideas and concepts into fully functional products that
             are both aesthetically pleasing and functional, satisfying business
             requirements
           </div>
-
-          <div className="w-[100%] flex  gap-7 items-center mt-10 max-lg:gap-3">
-            <buton className="bg-[#0031EB] text-center cursor-pointer   font-semibold text-white shadow-xl rounded-3xl text-[1rem] px-5 py-3 w-[30%] max-2xl:w-auto ">
+          <div className="w-[100%] flex  gap-7 items-center max-lg:gap-3">
+            <buton className="bg-[#0031EB] text-center cursor-pointer   font-semibold text-white shadow-xl rounded-3xl text-[1rem] px-5 py-3 w-[30%] max-2xl:w-auto max-2xl:text-sm">
               Our Services
             </buton>
-            <button className="bg-[#ffffff] flex max-lg:hidden items-center justify-center gap-2 border-1 text-[#1A2244] px-5 py-3 cursor-pointer text-center font-semibold shadow-xl rounded-3xl  text-[1rem] w-[50%] max-2xl:w-auto ">
+            <button className="bg-[#ffffff] flex max-lg:hidden items-center justify-center gap-2 border-1 text-[#1A2244] px-5 py-3 cursor-pointer text-center font-semibold shadow-xl rounded-3xl  text-[1rem] w-[50%] max-2xl:w-auto max-2xl:text-sm">
               <span>Book a free Consultation</span>
               <div className="relative w-7 h-7">
                 <Image
@@ -35,7 +39,7 @@ const Home = () => {
                 />
               </div>
             </button>
-            <button className="bg-[#ffffff] hidden max-lg:flex items-center justify-center gap-2 border-1 text-[#1A2244] px-5 py-3 cursor-pointer text-center font-semibold shadow-xl rounded-3xl  text-[1rem] w-[50%] max-2xl:w-auto max-xl:px-2 max-xl:py-2">
+            <button className="bg-[#ffffff] hidden max-lg:flex items-center justify-center gap-2 border-1 text-[#1A2244] px-10 py-3 cursor-pointer text-center font-semibold shadow-xl rounded-3xl  text-[1rem] w-[50%] max-2xl:w-auto max-xl:px-5 max-xl:py-2 max-2xl:text-sm">
               <span>Book now</span>
               <div className="relative w-7 h-7">
                 <Image
