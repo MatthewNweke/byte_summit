@@ -80,7 +80,7 @@ const Home = () => {
               </div>
             </div>
             <div className="shadow-2xl w-32 sm:h-36 sm:w-36 relative max-sm:shadow-none max-sm:bottom-[50%] ">
-            <div className="absolute left-28 z-50 max-sm:w-4 max-sm:h-4 top-0 hidden max-sm:inline ">
+            <div className="absolute left-28  max-sm:w-4 max-sm:h-4 top-0 hidden max-sm:inline ">
               <Image
                 src="/circle_blue.svg"
                 alt="circle_blue"

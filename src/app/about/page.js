@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Page = () => {
   return (
@@ -69,7 +70,7 @@ const Page = () => {
         <div
           className="w-full lg:w-[45%] min-h-[80vh] shadow-xl rounded-md p-8 bg-no-repeat bg-right-bottom"
           style={{
-            backgroundImage: "url('/approach_img-big.svg')",
+            backgroundImage: "url('/approach_img-big.png')",
           }}
         >
           <p className="text-[#1A2244] font-semibold text-[1.2rem] mb-5 max-md:mb-3">
@@ -94,7 +95,9 @@ const Page = () => {
             backgroundImage: "url('/team.svg')",
           }}
         >
-          <p className="text-[1.2rem] font-semibold mb-5 max-md:mb-3">Our Team</p>
+          <p className="text-[1.2rem] font-semibold mb-5 max-md:mb-3">
+            Our Team
+          </p>
           <p>
             We are dedicated to exceeding your expectations. We are passionate
             about what we do, and we take pride in building long-term
@@ -128,9 +131,12 @@ const Page = () => {
           consultation to discuss your project and see how we can help you
           create a website that&apos;s impactful for everyone.
         </p>
-        <button className="px-5 py-3 my-5 font-semibold rounded-3xl text-white bg-[#0032F0] text-sm cursor-pointer hover:bg-[#0020b3] max-lg:text-[1rem]">
-          Contact Us
-        </button>
+
+        <Link href="/contact">
+          <button className="px-5 py-3 my-5 font-semibold rounded-3xl text-white bg-[#0032F0] text-sm cursor-pointer hover:bg-[#0020b3] max-lg:text-[1rem]">
+            Contact Us
+          </button>
+        </Link>
       </div>
     </div>
   );
