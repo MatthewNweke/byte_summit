@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className="mt-16 max-md:mt-10">
       <div className="flex justify-center items-center max-lg:flex-wrap max-xl:px-5 max-xl:justify-around max-lg:justify-center max-lg:items-center max-lg:gap-20 max-sm:gap-0">
-        <div className="flex flex-col  h-[80vh] w-[40%] gap-[10%]  max-lg:justify-center max-lg:gap-[5%] justify-around max-2xl:w-[50%] max-lg:w-[60%] max-md:w-[80%] max-sm:w-[100%]">
+        <div className="flex flex-col h-[70vh] w-[40%] max-md:justify-between justify-between   max-lg:h-[60vh] max-2xl:w-[50%] max-lg:w-[60%] max-md:w-[80%] max-sm:w-[100%]">
           <div className="montserrat-bold text-4xl max-sm:max-w-[100%] max-w-[60%]  max-2xl:relative max-2xl:left-1/2 max-2xl:-translate-x-1/2  max-xl:max-w-[65%] max-lg:max-w-[100%]  max-3xl:text-2xl  font-semibold max-lg:translate-x-0 max-lg:left-0">
             <span className="text-4xl font-semibold max-2xl:text-3xl">
               Let&rsquo;s build your  <span><VerticalTextCarousel/></span> together
