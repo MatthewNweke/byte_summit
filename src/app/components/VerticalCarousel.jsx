@@ -39,6 +39,7 @@ const VerticalCarousel = () => {
           </div>
         ))}
       </div>
+       
     </div>
   );
 };

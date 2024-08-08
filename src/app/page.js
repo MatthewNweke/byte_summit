@@ -79,10 +79,19 @@ const Home = () => {
                 />
               </div>
             </div>
-            <div className="shadow-2xl h-32 w-32 sm:h-36 sm:w-36 relative max-sm:shadow-none"></div>
-            
+            <div className="shadow-2xl w-32 sm:h-36 sm:w-36 relative max-sm:shadow-none max-sm:bottom-[50%] ">
+            <div className="absolute left-28 z-50 max-sm:w-4 max-sm:h-4 top-0 hidden max-sm:inline ">
+              <Image
+                src="/circle_blue.svg"
+                alt="circle_blue"
+                layout="fill"
+                objectFit="contain"
+                className="rounded-xl"
+              />
+              </div>
+            </div>
           </div>
-          <div className="absolute right-0 w-6 h-6 sm:w-8 sm:h-8 max-sm:top-[4rem] max-sm:left-[1.2rem]">
+          <div className="absolute right-0 w-6 h-6 sm:w-8 sm:h-8 max-sm:top-[4rem] max-sm:left-0">
               <Image
                 src="/circle_blue.svg"
                 alt="circle_blue"
