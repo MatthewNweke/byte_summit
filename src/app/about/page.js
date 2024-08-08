@@ -1,58 +1,46 @@
-import React from "react";
+
+"use client"
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 const Page = () => {
+  const [isMediumScreen, setIsMediumScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => setIsMediumScreen(window.innerWidth >= 768);
+    handleResize(); // Initialize on mount
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
-    <div className="">
-      {/* <div className="min-h-screen bg-blue-500 flex flex-col max-md:min-h-[80vh]">
-        <div className="bg-[#E6EBFE] flex-1 relative">
-          <div className="bg-red-500 flex flex-col justify-end max-w-screen-lg w-full px-6 py-3 mx-auto">
-            <p className="text-[#0032F0] text-xl font-semibold md:text-2xl">
+    <div>
+      {/* Header Section */}
+      <div className="relative h-[70vh] mx-auto max-md:h-[60vh] max-sm:h-[50vh]">
+        <div className="bg-[#E6EBFE] w-full absolute h-[60%]">
+          <div className="h-[50%] mx-auto flex max-w-3xl flex-col justify-end py-5 px-3 max-sm:h-[60%]">
+            <p className="text-[#0032F0] text-xl font-semibold md:text-2xl xl:text-3xl mb-1">
               About Us
             </p>
-            <p className="text-sm md:text-base">
-              Let's Connect and Build Something Amazing Together
+            <p className="md:text-lg text-md">
+              Let&apos;s Connect and Build Something Amazing Together
             </p>
           </div>
         </div>
-        <div className="relative w-full h-96 bg-[red]">
-          <div className="absolute w-full h-full  max-w-screen-lg mx-auto bottom-[25%] max-md:bottom-[10%] -translate-y-[25%] left-1/2 -translate-x-1/2">
-            <Image
-              src="/about_bg.svg"
-              alt="team"
-              layout="fill"
-              objectFit="contain"
-              loading="lazy"
-            />
-          </div>
-        </div>
-      </div> */}
-      <div className="">
-        <div className="relative h-[70vh] mx-auto max-md:h-[60vh] max-sm:h-[50vh]">
-          <div className="bg-[#E6EBFE] w-[100%] absolute h-[60%]">
-            <div className=" h-[50%] mx-auto flex max-w-3xl flex-col justify-end py-5 px-3 max-sm:h-[60%]">
-              <p className="text-[#0032F0] text-xl font-semibold md:text-2xl xl:text-3xl mb-1 ">
-                About Us
-              </p>
-              <p className="md:text-lg text-md">
-                Let&apos;s Connect and Build Something Amazing Together
-              </p>
-            </div>
-          </div>
-          <div className="absolute max-sm:w-[95%] w-full h-[70%] max-sm:h-[60%] max-w-3xl bottom-0 mx-auto left-1/2 -translate-x-1/2">
-            <Image
-              src="/about_bg.svg"
-              alt="team"
-              layout="fill"
-              objectFit="contain"
-              loading="lazy"
-            />
-          </div>
+        <div className="absolute max-sm:w-[95%] w-full h-[70%] max-sm:h-[60%] max-w-3xl bottom-0 mx-auto left-1/2 -translate-x-1/2">
+          <Image
+            src="/about_bg.svg"
+            alt="team"
+            layout="fill"
+            objectFit="contain"
+            loading="lazy"
+          />
         </div>
       </div>
 
-      <div className="relative w-[90%] sm:w-[70%] left-1/2 transform -translate-x-1/2 text-[1.1rem] text-justify py-10 max-md:py-3 ">
+      {/* About Section */}
+      <div className="relative text-lg w-[90%] sm:w-[70%] left-1/2 transform -translate-x-1/2 text-justify  py-10 max-md:py-3">
         At Pixel Perfect, we&apos;re passionate about creating impactful and
         engaging experiences that are accessible to everyone. We&apos;re a team
         of skilled software engineers, designers, and project managers
@@ -66,17 +54,22 @@ const Page = () => {
         seamlessly.
       </div>
 
+      {/* Approach and Team Section */}
       <div className="flex items-center max-md:flex-col justify-between mt-20 relative w-[70%] max-lg:w-[100%] left-1/2 transform -translate-x-1/2 gap-10 sm:gap-0 max-md:mt-10">
         <div
-          className="w-full lg:w-[45%] min-h-[80vh] shadow-xl rounded-md p-8 bg-no-repeat bg-right-bottom"
-          style={{
-            backgroundImage: "url('/approach_img-big.png')",
-          }}
+          className={`w-full lg:w-[45%] min-h-[80vh] shadow-xl rounded-md p-8 ${
+            isMediumScreen ? "bg-no-repeat bg-right-bottom" : "bg-none"
+          }`}
+          style={
+            isMediumScreen
+              ? { backgroundImage: "url('/approach_img-big.png')" }
+              : {}
+          }
         >
-          <p className="text-[#1A2244] font-semibold text-[1.2rem] mb-5 max-md:mb-3">
+          <p className="text-[#1A2244] font-semibold  mb-5 max-md:mb-3">
             Our Approach
           </p>
-          <p>
+          <p className="text-justify text-lg">
             Through a collaborative approach, we get to know your brand, target
             audience, and vision. We then translate that knowledge into:
             Beautiful and User-Friendly Web Design: We design websites that are
@@ -98,7 +91,7 @@ const Page = () => {
           <p className="text-[1.2rem] font-semibold mb-5 max-md:mb-3">
             Our Team
           </p>
-          <p>
+          <p className="text-justify text-lg">
             We are dedicated to exceeding your expectations. We are passionate
             about what we do, and we take pride in building long-term
             relationships with our clients.
@@ -115,7 +108,8 @@ const Page = () => {
         </div>
       </div>
 
-      <div className="mt-10 relative w-[90%] sm:w-[70%] left-1/2 transform -translate-x-1/2 text-[1.1rem] text-justify">
+      {/* Call to Action Section */}
+      <div className="mt-10 relative w-[90%] sm:w-[70%] left-1/2 text-justify transform -translate-x-1/2 text-lg">
         <p className="text-[#5E5E5E] font-semibold mb-5">
           Here&apos;s what sets us apart:
         </p>
