@@ -134,7 +134,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#0032F0] pt-10 pb-10 max-md:pb-0  flex flex-col md:flex-row items-center justify-end  gap-[20%] max-xl:gap-[10%]  max-xl:px-5 mt-20 min-h-[60vh]">
+      <div className="bg-[#0032F0] pt-10 pb-10 max-md:pb-0  flex flex-col md:flex-row items-center justify-end  gap-[20%] max-xl:gap-[10%]  max-xl:px-5  min-h-[60vh]">
         <div className="text-white text-[1rem] w-[80%] md:w-[50%] lg:w-[30%]  mb-10 md:mb-0">
           <p className="text-[2rem] mb-5 md:mb-10">At Bytesummit</p>
           <p>
