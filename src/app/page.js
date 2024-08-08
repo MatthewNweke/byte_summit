@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className="mt-16 max-md:mt-10">
       <div className="flex justify-center items-center max-lg:flex-wrap max-xl:px-5 max-xl:justify-around max-lg:justify-center max-lg:items-center max-lg:gap-20 max-sm:gap-0">
-        <div className="flex flex-col h-[70vh] w-[40%] max-md:justify-between justify-between   max-lg:h-[60vh] max-2xl:w-[50%] max-lg:w-[60%] max-md:w-[80%] max-sm:w-[100%]">
+        <div className="flex flex-col h-[70vh] w-[40%] max-md:justify-between justify-between max-sm:h-[50vh]  max-lg:h-[60vh] max-2xl:w-[50%] max-lg:w-[60%] max-md:w-[80%] max-sm:w-[100%]">
           <div className="montserrat-bold text-4xl max-sm:max-w-[100%] max-w-[60%]  max-2xl:relative max-2xl:left-1/2 max-2xl:-translate-x-1/2  max-xl:max-w-[65%] max-lg:max-w-[100%]  max-3xl:text-2xl  font-semibold max-lg:translate-x-0 max-lg:left-0">
             <span className="text-4xl font-semibold max-2xl:text-3xl">
               Let&rsquo;s build your  <span><VerticalTextCarousel/></span> together
@@ -24,7 +24,7 @@ const Home = () => {
             requirements
           </div>
           <div className="w-[100%] flex  gap-7 items-center max-lg:gap-3 max-2xl:justify-center max-lg:justify-start">
-            <buton className="bg-[#0031EB] text-center cursor-pointer   font-semibold text-white shadow-xl rounded-3xl text-[1rem] px-5 py-3 w-[30%] max-2xl:w-auto max-2xl:text-sm">
+            <buton className="bg-[#0031EB] border-[4px] border-white text-center cursor-pointer   font-semibold text-white shadow-xl rounded-3xl text-[1rem] px-5 py-3 w-[30%] max-2xl:w-auto max-2xl:text-sm">
               Our Services
             </buton>
             <button className="bg-[#ffffff] flex max-lg:hidden items-center justify-center gap-2 border-1 text-[#1A2244] px-5 py-3 cursor-pointer text-center font-semibold shadow-xl rounded-3xl  text-[1rem] w-[50%] max-2xl:w-auto max-2xl:text-sm">
@@ -55,8 +55,8 @@ const Home = () => {
         </div>
 
         {/* This section is for a vertical carousel images;different images will be displayed but in a vertical direction*/}
-        <div className="p-4 overflow-hidden">
-          <div className="flex gap-5 justify-center relative top-10">
+        <div className="p-4 overflow-hidden max-md:p-0">
+          <div className="flex gap-5 justify-center relative top-10  max-sm:h-[3em]">
             <div className="shadow-2xl h-32 w-32 sm:h-40 sm:w-40 relative max-sm:hidden">
               <div className="absolute w-6 h-6 sm:w-8 sm:h-8 right-0">
                 <Image
@@ -68,7 +68,7 @@ const Home = () => {
                 />
               </div>
             </div>
-            <div className="shadow-2xl h-32 w-32 sm:h-40 sm:w-40 relative max-sm:shadow-none">
+            <div className="shadow-2xl h-32 w-32 sm:h-40 sm:w-40 relative max-sm:shadow-none ">
               <div className="absolute w-6 h-6 sm:w-8 sm:h-8 top-2 right-2 max-sm:hidden">
                 <Image
                   src="/rect_orange.svg"

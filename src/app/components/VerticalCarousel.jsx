@@ -24,7 +24,7 @@ const VerticalCarousel = () => {
   return (
     <div className="relative h-[50vh] overflow-hidden">
       <div
-        className="absolute inset-0 flex flex-col"
+        className="absolute inset-0 flex flex-col "
         style={{ transform: `translateY(-${currentIndex * 100}%)`, transition: 'transform 0.3s ease-in-out' }}
       >
         {images.map((src, index) => (
