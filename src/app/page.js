@@ -7,10 +7,10 @@ import VerticalTextCarousel from "./components/VerticalTextCarousel";
 const Home = () => {
   return (
     <div className="mt-16 max-md:mt-10">
-      <div className="flex justify-center items-center max-lg:flex-wrap max-xl:px-5 max-xl:justify-around max-lg:justify-center max-lg:items-center max-lg:gap-20">
-        <div className="flex flex-col  h-[70vh] w-[40%] justify-between max-2xl:w-[50%] max-lg:w-[60%] max-md:w-[80%] max-sm:w-[100%]">
-          <div className="montserrat-bold text-4xl  max-w-[60%] max-sm:max-w-[70%] max-xl:max-w-[65%] max-lg:max-w-[60%] max-xl:w-auto max-lg:w-[100%] max-3xl:text-2xl max-md:text-2xl font-semibold">
-            <span className="text-4xl font-semibold max-2xl:text-3xl max-md:text-2xl">
+      <div className="flex justify-center items-center max-lg:flex-wrap max-xl:px-5 max-xl:justify-around max-lg:justify-center max-lg:items-center max-lg:gap-20 max-sm:gap-0">
+        <div className="flex flex-col  h-[70vh] w-[40%]  justify-between max-2xl:w-[50%] max-lg:w-[60%] max-md:w-[80%] max-sm:w-[100%]">
+          <div className="montserrat-bold text-4xl max-sm:max-w-[100%] max-w-[60%]  max-2xl:relative max-2xl:left-1/2 max-2xl:-translate-x-1/2  max-xl:max-w-[65%] max-lg:max-w-[100%]  max-3xl:text-2xl  font-semibold max-lg:translate-x-0 max-lg:left-0">
+            <span className="text-4xl font-semibold max-2xl:text-3xl">
               Let&rsquo;s build your  <span><VerticalTextCarousel/></span> together
             </span>
             
@@ -18,12 +18,12 @@ const Home = () => {
               
             
           </div>
-          <div className="w-[65%] text-[1.2rem] max-lg:w-[100%]">
+          <div className="max-w-[60%] text-lg max-2xl:relative max-2xl:left-1/2 max-2xl:-translate-x-1/2 max-sm:max-w-[100%] max-xl:max-w-[65%] max-lg:max-w-[100%] max-xl:w-auto max-lg:w-[100%] max-lg:translate-x-0 max-lg:left-0">
             We transform ideas and concepts into fully functional products that
             are both aesthetically pleasing and functional, satisfying business
             requirements
           </div>
-          <div className="w-[100%] flex  gap-7 items-center max-lg:gap-3">
+          <div className="w-[100%] flex  gap-7 items-center max-lg:gap-3 max-2xl:justify-center max-lg:justify-start">
             <buton className="bg-[#0031EB] text-center cursor-pointer   font-semibold text-white shadow-xl rounded-3xl text-[1rem] px-5 py-3 w-[30%] max-2xl:w-auto max-2xl:text-sm">
               Our Services
             </buton>
@@ -144,7 +144,7 @@ const Home = () => {
           </p>
         </div>
         <div className="relative w-[80%] lg:w-[50%] xl:w-[40%] h-[60vh] max-md:hidden inline">
-          <div className="absolute w-[1.5rem] h-[1.5rem] right-28 top-6">
+          <div className="absolute w-[1.5rem] h-[1.5rem] right-28 top-6 max-2xl:right-14 max-2xl:top-10  max-lg:right-8 max-lg:top-5">
             <Image
               src="circle.svg"
               alt="circle"
@@ -153,7 +153,7 @@ const Home = () => {
               loading="lazy"
             />
           </div>
-          <div className="absolute w-[1.5rem] h-[1.5rem] right-28 bottom-6">
+          <div className="absolute w-[1.5rem] h-[1.5rem] right-28 bottom-6 max-2xl:right-14 max-2xl:bottom-10 max-lg:right-8 max-lg:bottom-5">
             <Image
               src="star.svg"
               alt="star"
