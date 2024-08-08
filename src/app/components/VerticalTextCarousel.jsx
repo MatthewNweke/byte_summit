@@ -24,7 +24,7 @@ const VerticalTextCarousel = () => {
   return (
     <div className="flex items-center space-x-4 text-4xl font-semibold max-2xl:text-3xl ">
       <div className="">
-        <span className="">Dream</span>
+        <span className="">dream</span>
         
       </div>
       <div className="relative w-full inline-block h-[2em] overflow-hidden">

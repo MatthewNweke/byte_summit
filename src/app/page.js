@@ -24,7 +24,7 @@ const Home = () => {
             requirements
           </div>
           <div className="w-[100%] flex  gap-7 items-center max-lg:gap-3 max-2xl:justify-center max-lg:justify-start">
-            <buton className="bg-[#0031EB] border-[4px] border-white text-center cursor-pointer   font-semibold text-white shadow-xl rounded-3xl text-[1rem] px-5 py-3 w-[30%] max-2xl:w-auto max-2xl:text-sm">
+            <buton className="bg-[#0031EB] border-[5px] border-white text-center cursor-pointer   font-semibold text-white shadow-xl rounded-3xl text-[1rem] px-5 py-3 w-[30%] max-2xl:w-auto max-2xl:text-sm">
               Our Services
             </buton>
             <button className="bg-[#ffffff] flex max-lg:hidden items-center justify-center gap-2 border-1 text-[#1A2244] px-5 py-3 cursor-pointer text-center font-semibold shadow-xl rounded-3xl  text-[1rem] w-[50%] max-2xl:w-auto max-2xl:text-sm">
@@ -55,10 +55,10 @@ const Home = () => {
         </div>
 
         {/* This section is for a vertical carousel images;different images will be displayed but in a vertical direction*/}
-        <div className="p-4 overflow-hidden max-md:p-0">
-          <div className="flex gap-5 justify-center relative top-10  max-sm:h-[3em]">
-            <div className="shadow-2xl h-32 w-32 sm:h-40 sm:w-40 relative max-sm:hidden">
-              <div className="absolute w-6 h-6 sm:w-8 sm:h-8 right-0">
+        <div className="p-4 overflow-hidden max-md:p-0   ">
+          <div className="flex gap-10 justify-center relative top-10  max-sm:h-[3em]">
+            <div className="shadow-2xl h-32 w-32 sm:h-36 sm:w-36 relative max-sm:hidden">
+              <div className="absolute w-6 h-6 sm:w-8 sm:h-8 left-36 top-0">
                 <Image
                   src="/rect_blue.svg"
                   alt="rect_blue"
@@ -68,8 +68,8 @@ const Home = () => {
                 />
               </div>
             </div>
-            <div className="shadow-2xl h-32 w-32 sm:h-40 sm:w-40 relative max-sm:shadow-none ">
-              <div className="absolute w-6 h-6 sm:w-8 sm:h-8 top-2 right-2 max-sm:hidden">
+            <div className="shadow-2xl h-32 w-32 sm:h-36 sm:w-36 relative max-sm:shadow-none ">
+              <div className="absolute w-6 h-6 sm:w-8 sm:h-8  left-5 top-5 max-sm:hidden">
                 <Image
                   src="/rect_orange.svg"
                   alt="rect_orange"
@@ -79,8 +79,10 @@ const Home = () => {
                 />
               </div>
             </div>
-            <div className="shadow-2xl h-32 w-32 sm:h-40 sm:w-40 relative max-sm:shadow-none"></div>
-            <div className="relative w-6 h-6 sm:w-8 sm:h-8 left-1/5 bottom-0 max-sm:top-[4rem] max-sm:left-[1.2rem]">
+            <div className="shadow-2xl h-32 w-32 sm:h-36 sm:w-36 relative max-sm:shadow-none"></div>
+            
+          </div>
+          <div className="absolute right-0 w-6 h-6 sm:w-8 sm:h-8 max-sm:top-[4rem] max-sm:left-[1.2rem]">
               <Image
                 src="/circle_blue.svg"
                 alt="circle_blue"
@@ -89,21 +91,20 @@ const Home = () => {
                 className="rounded-xl"
               />
             </div>
-          </div>
 
           <VerticalCarousel />
 
-          <div className="flex flex-wrap justify-between relative bottom-10">
-            <div className="shadow-2xl h-32 w-32 sm:h-40 sm:w-40 relative max-sm:shadow-none"></div>
+          <div className="flex flex-wrap justify-between relative bottom-10 max-sm:h-[2em]">
+            <div className="shadow-2xl h-32 w-32 sm:h-36 sm:w-36 relative max-sm:shadow-none"></div>
             <div className="flex -z-10 max-sm:hidden">
-              <div className="shadow-2xl h-32 w-32 sm:h-40 sm:w-40 bg-white z-10 relative"></div>
-              <div className="shadow-2xl h-32 w-32 sm:h-40 sm:w-40 bg-white relative top-10 right-10 -z-10"></div>
+              <div className="shadow-2xl h-32 w-32 sm:h-36 sm:w-36 bg-white z-10 relative"></div>
+              <div className="shadow-2xl h-32 w-32 sm:h-36 sm:w-36 bg-white relative top-10 right-10 -z-10"></div>
             </div>
           </div>
 
           <div className="flex flex-wrap justify-between relative bottom-12 lg:bottom-16">
             <div>
-              <div className="relative w-6 h-6 sm:w-8 sm:h-8">
+              <div className="relative w-6 h-6 top-5 sm:w-8 sm:h-8 max-md:top-2 max-sm:top-5">
                 <Image
                   src="/star_orange.svg"
                   alt="star"
@@ -122,7 +123,9 @@ const Home = () => {
                 />
               </div>
             </div>
-            <div className="relative w-6 h-6 sm:w-8 sm:h-8 bottom-16 lg:bottom-24 right-12 lg:right-24">
+            
+          </div>
+          <div className="relative w-6 h-6 sm:w-8 sm:h-8 left-[95%] bottom-36 max-md:left-[80%] max-md:bottom-14">
               <Image
                 src="/star_blue.svg"
                 alt="star"
@@ -131,7 +134,6 @@ const Home = () => {
                 className="rounded-xl"
               />
             </div>
-          </div>
         </div>
       </div>
       <div className="bg-[#0032F0] pt-10 pb-10 max-md:pb-0  flex flex-col md:flex-row items-center justify-end  gap-[20%] max-xl:gap-[10%]  max-xl:px-5  min-h-[60vh]">
