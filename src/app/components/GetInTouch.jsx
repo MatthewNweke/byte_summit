@@ -10,7 +10,7 @@ const GetInTouch = () => {
           Can&apos;t find the answer you&apos;re looking for? Please chat with our friendly team.
         </p>
       </div>
-      <button className="flex items-center justify-center px-5 py-3 bg-white text-black rounded-3xl text-sm lg:text-base gap-2 shadow-md hover:bg-gray-100 transition duration-300 max-w-xs  sm:max-w-sm md:max-w-md lg:max-w-lg">
+      {/* <button className="flex items-center justify-center px-5 py-3 bg-white text-black rounded-3xl text-sm lg:text-base gap-2 shadow-md hover:bg-gray-100 transition duration-300 max-w-xs  sm:max-w-sm md:max-w-md lg:max-w-lg">
         <span>Get in touch</span>
         <div className="w-8 h-8 relative">
           <Image
@@ -20,8 +20,30 @@ const GetInTouch = () => {
             objectFit="contain"
             loading="lazy"
           />
-        </div>
+        </div>  
+      </button> */}
+
+
+      <div className="flex items-center">
+      <button className="bg-white inline-flex items-center justify-around gap-2 text-black px-5 py-[0.75rem] rounded-3xl max-md:text-sm max-md:gap-1 max-md:px-3  max-sm:py-2">
+        Get in touch
+
+        <div className="w-8 h-8 relative max-md:w-7 max-md:h-7">
+          <Image
+            src="/tel.svg"
+            alt="Phone icon"
+            layout="fill"
+            objectFit="contain"
+            loading="lazy"
+          />
+        </div>  
       </button>
+
+
+      <div className="hidden max-sm:block">
+
+      </div>
+      </div>
     </div>
   );
 };

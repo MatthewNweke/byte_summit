@@ -4,11 +4,11 @@ import Dropship from "../components/Dropship";
 const page = () => {
   return (
     <div className="mt-16 max-md:mt-10 text-[#0024AA]">
-      <div className="w-[55%] relative left-1/2 top-0 px-5 -translate-x-1/2 max-lg:w-[70%] max-md:w-[100%]">
-        <p className=" text-xl font-semibold md:text-2xl xl:text-3xl mb-5">
+      <div className="w-[55%] relative left-1/2 top-0 px-5 -translate-x-1/2 max-lg:w-[70%] max-md:w-[100%] bg-cover" style={{ backgroundImage: "url('/transform.svg')" }}>
+        <p className=" text-xl font-semibold md:text-2xl xl:text-3xl mb-5 text-[#0024AA] max-sm:text-[#1A2244]">
           Transforming Ideas into Digital Masterpieces
         </p>
-        <p>
+        <p className="text-[#1A2244]">
           At Bytesummit, we offer a comprehensive suite of services designed to
           meet your unique digital needs. From creating stunning websites to
           developing robust mobile applications and custom software solutions,
